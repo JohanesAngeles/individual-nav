@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personified Lifeline</title>
+    <link rel="stylesheet" href="indiv - nv menu - alezz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="AlezzImages/Navigation - Alezz - bg.png" alt="" class="art1-bg">
+                <button class="art1b" onclick="navigateTo('')"></button>
+                <button class="info-art1" onclick="openModal(0)"></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="AlezzImages/Navigation - Alezz - bg.png" alt="" class="art2-bg">
+                <button class="art2b" onclick="navigateTo('bio-alezz.html')"></button>
+                <button class="info-art2" onclick="openModal(1)"></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="AlezzImages/Navigation - Alezz - bg.png" alt="" class="art3-bg">
+                <button class="art3b" onclick="navigateTo('music-alezz.html')"></button>
+                <button class="info-art3" onclick="openModal(2)"></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="AlezzImages/Navigation - Alezz - bg.png" alt="" class="art4_5_6-bg">
+                <button class="art4b" onclick="navigateTo('personal-story-alezz1.html')"></button>
+                <button class="info-art4" onclick="openModal(3)"></button>
+
+                <button class="art5b" onclick="navigateTo('personal-story-alezz2.html')"></button>
+                <button class="info-art5" onclick="openModal(4)"></button>
+
+                <button class="art6b" onclick="navigateTo('personal-story-alezz3.html')"></button>
+                <button class="info-art6" onclick="openModal(5)"></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="AlezzImages/Navigation - Alezz - bg.png" alt="" class="art7-bg">
+                <button class="art7b" onclick="navigateTo('photo-album-alezz.html')"></button>
+                <button class="info-art7" onclick="openModal(6)"></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="AlezzImages/Navigation - Alezz - bg.png" alt="" class="art8-bg">
+                <button class="art8b" onclick="navigateTo('potfolio - alezz - 1stpage.html')"></button>
+                <button class="info-art8" onclick="openModal(7)"></button>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="artModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-artist"></p>
+            <p id="modal-date"></p>
+            <p id="modal-medium"></p>
+            <p id="modal-provenance"></p>
+            <p id="modal-description"></p>
+            <p id="modal-accession"></p>
+            <img id="modal-img" src="" alt="Art Image">
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        var artData = [
+            {
+                "titleImg": "slideImages/Painting info1 - alezz.png"
+            },
+            {
+                "titleImg": "slideImages/Painting info2 - alezz.png"
+            },
+            {
+                "titleImg": "slideImages/Painting info3 - alezz.png"
+            },
+            {
+               "titleImg": "slideImages/Painting info4 - alezz.png"
+            },
+            {
+                "titleImg": "slideImages/Painting info5 - alezz.png"
+            },
+            {
+                "titleImg": "slideImages/Painting info6 - alezz.png"
+            },
+            {
+               "titleImg": "slideImages/Painting info7 - alezz.png"
+            },
+            {
+               "titleImg": "slideImages/Painting info8 - alezz.png"
+            }
+        ];
+
+
+        function openModal(index) {
+            var artInfo = artData[index];
+
+            document.getElementById('modal-artist').textContent = artInfo.artist ? artInfo.artist : "";
+            document.getElementById('modal-date').textContent = artInfo.date ? artInfo.date : "";
+            document.getElementById('modal-medium').textContent = artInfo.medium ? artInfo.medium : "";
+            document.getElementById('modal-provenance').textContent = artInfo.provenance ? artInfo.provenance : "";
+            document.getElementById('modal-description').textContent = artInfo.description ? artInfo.description : "";
+            document.getElementById('modal-accession').textContent = artInfo.accession ? artInfo.accession : "";
+
+            // Set the image source
+            var modalImageElement = document.getElementById('modal-img');
+            if (modalImageElement) {
+                modalImageElement.src = artInfo.titleImg ? artInfo.titleImg : "";
+            }
+
+            var modal = document.getElementById("artModal");
+            modal.style.display = "block"; // Show the modal
+            setTimeout(function() {
+                modal.classList.add('show'); // Add the 'show' class after a short delay for the animation to occur
+            }, 10); // Delay value can be adjusted as needed
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("artModal");
+            modal.classList.remove('show'); // Remove the 'show' class to hide the modal with fade-out animation
+            setTimeout(function() {
+                modal.style.display = "none"; // Hide the modal after the animation completes
+            }, 300); // This should match the transition duration (0.3s)
+        }
+
+    </script>
+
+</body>
+</html>

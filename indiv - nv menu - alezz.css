@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'TNR';
+    font-weight: 50px;
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('woff');
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+    position: relative; /* Ensure the slide is a positioned element */
+}
+
+.art1-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art1b {
+    position: absolute;
+    width: 433px;
+    height: 596px;
+    left: 750px;
+    top: 250px;
+    background-image: url('AlezzImages/art1\ -\ alezz.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.content {
+    position: relative; /* Ensure this is a positioned element */
+    width: 100%;
+    height: 100%;
+}
+
+.info-art1 {
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 640px;
+    top: 790px;
+    background-image: url('AlezzImages/art1\ -\ info\ -\ alezz.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art2-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art2b {
+    position: absolute;
+    width: 571px;
+    height: 421px;
+    left: 670px;
+    top: 330px;
+    background-image: url('AlezzImages/art2\ -\ alezz.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art2{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 670px;
+    top: 770px;
+    background-image: url('AlezzImages/art2\ -\ info\ -\ alezz.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art3-bg{
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art3b {
+    position: absolute;
+    width: 556px;
+    height: 439px;
+    left: 670px;
+    top: 350px;
+    background-image: url('AlezzImages/art\ 3\ -\ alezz.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art3{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 670px;
+    top: 820px;
+    background-image: url('AlezzImages/art3\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art4_5_6-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+
+.art4b {
+    position: absolute;
+    width: 483px;
+    height: 373px;
+    left: 170px;
+    top: 270px;
+    background-image: url('AlezzImages/art4.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art5b {
+    position: absolute;
+    width: 483px;
+    height: 373px;
+    left: 725px;
+    top: 270px;
+    background-image: url('AlezzImages/art5.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art6b {
+    position: absolute;
+    width: 483px;
+    height: 373px;
+    right: 170px;
+    top: 270px;
+    background-image: url('AlezzImages/art6.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+
+.info-art4{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 170px;
+    top: 660px;
+    background-image: url('AlezzImages/art4\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.info-art5{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 725px;
+    top: 660px;
+    background-image: url('AlezzImages/art5\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.info-art6{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 1265px;
+    top: 660px;
+    background-image: url('AlezzImages/art6\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.art7b {
+    position: absolute;
+    width: 493px;
+    height: 432px;
+    left: 722px;
+    top: 333px;
+    background-image: url('AlezzImages/art7.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art7{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 722px;
+    top: 810px;
+    background-image: url('AlezzImages/art7\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.art8-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art8b {
+    position: absolute;
+    width: 493px;
+    height: 432px;
+    left: 722px;
+    top: 333px;
+    background-image: url('AlezzImages/art8.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art8{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 722px;
+    top: 810px;
+    background-image: url('AlezzImages/art8\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    opacity: 0; /* Initially hide the modal */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.modal.show {
+    opacity: 1; /* Show the modal with fade-in animation */
+}
+
+#modal-img {
+    position: absolute;
+    width: 730px; /* Set width to 100% */
+    height: 449px; /* Set height to 100% */
+    left: 550px;
+    top: 300px;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    display: block;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'TNR';
+    font-weight: 50px;
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('woff');
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+    position: relative; /* Ensure the slide is a positioned element */
+}
+
+.art1-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art1b {
+    position: absolute;
+    width: 349px;
+    height: 487px;
+    left: 790px;
+    top: 290px;
+    background-image: url('JohanImages/Johan\ pic\ -\ art1.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.content {
+    position: relative; /* Ensure this is a positioned element */
+    width: 100%;
+    height: 100%;
+}
+
+.info-art1 {
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 640px;
+    top: 800px;
+    background-image: url('JohanImages/art1\ -\ info.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art2-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art2b {
+    position: absolute;
+    width: 578px;
+    height: 394px;
+    left: 670px;
+    top: 330px;
+    background-image: url('JohanImages/art2\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art2{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 590px;
+    top: 820px;
+    background-image: url('JohanImages/art2\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art3-bg{
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art3b {
+    position: absolute;
+    width: 578px;
+    height: 367px;
+    left: 670px;
+    top: 350px;
+    background-image: url('JohanImages/art3\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art3{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 590px;
+    top: 820px;
+    background-image: url('JohanImages/art3\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art4_5_6-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+
+.art4b {
+    position: absolute;
+    width: 320px;
+    height: 452px;
+    left: 365px;
+    top: 270px;
+    background-image: url('JohanImages/art4\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art5b {
+    position: absolute;
+    width: 320px;
+    height: 452px;
+    left: 800px;
+    top: 270px;
+    background-image: url('JohanImages/art5\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.art6b {
+    position: absolute;
+    width: 320px;
+    height: 452px;
+    right: 365px;
+    top: 270px;
+    background-image: url('JohanImages/art6.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+
+.info-art4{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 335px;
+    top: 780px;
+    background-image: url('JohanImages/art4\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.info-art5{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 770px;
+    top: 780px;
+    background-image: url('JohanImages/art5\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.info-art6{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    right: 630px;
+    top: 780px;
+    background-image: url('JohanImages/art5\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.art7b {
+    position: absolute;
+    width: 375px;
+    height: 410px;
+    left: 775px;
+    top: 333px;
+    background-image: url('JohanImages/art7\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art7{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 722px;
+    top: 810px;
+    background-image: url('JohanImages/art5\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.art8-bg {
+    position: absolute;
+    width: 100%; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.art8b {
+    position: absolute;
+    width: 594px;
+    height: 455px;
+    left: 649px;
+    top: 315px;
+    background-image: url('JohanImages/art8_2\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 2;
+}
+
+.info-art8{
+    position: absolute;
+    width: 88px;
+    height: 54px;
+    left: 650px;
+    top: 790px;
+    background-image: url('JohanImages/art8\ -\ info\ -\ johan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px; /* Adjust as needed for desired spacing */
+    text-align: center;
+    z-index: 3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    opacity: 0; /* Initially hide the modal */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.modal.show {
+    opacity: 1; /* Show the modal with fade-in animation */
+}
+
+#modal-img {
+    position: absolute;
+    width: 730px; /* Set width to 100% */
+    height: 449px; /* Set height to 100% */
+    left: 550px;
+    top: 300px;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    display: block;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
